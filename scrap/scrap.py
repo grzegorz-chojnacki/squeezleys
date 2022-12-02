@@ -111,5 +111,5 @@ with open('products.json', 'w') as f:
 print('Saved products')
 
 with open('raw_data.json', 'w') as f:
-    json.dump(raw_data, f, ensure_ascii=False)
+    json.dump(raw_data, f, ensure_ascii=False, indent=4)
 print('Saved raw data')
