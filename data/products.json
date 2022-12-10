@@ -557,6 +557,21 @@
         "variants": []
     },
     {
+        "name": "Squishy - Wesoła pasta do zębów",
+        "category": "gniotki-squishy",
+        "price": 24.99,
+        "base_price": 24.99,
+        "available": 1,
+        "description": "<p style=\"font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif; font-size: 13.3333px;\">Sposób na zajęcie niecierpliwych dłoni jak również świetny do ćwiczeń sensorycznych - gniotka można ugniatać na wiele sposobów. Doskonały do rozwijania sprawności ruchowej dłoni (mała motoryka). </p>\r\n<h3 style=\"font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;\">Oryginalne Squishy!</h3>\r\n<h4 style=\"font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;\">Pianka najlepszej jakości</h4>",
+        "description_short": "<p>Ściskacz Squishy - rewelacyjna zabawka antystresowa</p>\r\n<p>Przyjemny, owocowy zapach</p>\r\n<p>Designed in Japan</p>",
+        "discount": null,
+        "image_urls": [
+            "5348-large_default-squishy-wesola-pasta-do-zebow.jpg",
+            "5349-large_default-squishy-wesola-pasta-do-zebow.jpg"
+        ],
+        "variants": []
+    },
+    {
         "name": "Squishy Jednorożec bobas",
         "category": "gniotki-squishy",
         "price": 19.5,
@@ -1333,6 +1348,20 @@
             "22150-large_default-pop-it-gra-popitgame-teczowa-z-kostkami.jpg",
             "22151-large_default-pop-it-gra-popitgame-teczowa-z-kostkami.jpg",
             "22152-large_default-pop-it-gra-popitgame-teczowa-z-kostkami.jpg"
+        ],
+        "variants": []
+    },
+    {
+        "name": "Pop it gra popitgame tęczowa z kostkami",
+        "category": "popit",
+        "price": 49.99,
+        "base_price": 49.989999,
+        "available": 2,
+        "description": "",
+        "description_short": "<p>Duża gra pop it z kostkami</p>\r\n<p>Tęczowe, żywe kolory</p>\r\n<p>Wymiary: 28 x 19 x 2 cm</p>",
+        "discount": null,
+        "image_urls": [
+            "22148-large_default-pop-it-gra-popitgame-teczowa-z-kostkami.jpg"
         ],
         "variants": []
     },

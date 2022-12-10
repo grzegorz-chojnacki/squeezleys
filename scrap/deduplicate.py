@@ -6,13 +6,13 @@ PRODUCTS_PATH = '../data/products.json'
 with open(PRODUCTS_PATH) as f:
     products = json.load(f)
 
-names = set()
+names = dict()
 
 def unique(product):
-    if product["name"] in names:
+    if product["name"] in names and product == names[product["name"]]:
         return False
     else:
-        names.add(product["name"])
+        names[product["name"]] = product
         return True
 
 products = [product for product in products if unique(product)]
