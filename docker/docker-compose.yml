@@ -3,6 +3,7 @@ version: '3'
 volumes:
   db-data:
   var:
+  shop:
 
 services:
   database:
@@ -13,20 +14,23 @@ services:
       MARIADB_ROOT_PASSWORD: prestashop
       MARIADB_DATABASE: prestashop
     restart: always
+
   
   db-admin:
     image: phpmyadmin
     ports:
-      - "8080:8080"
+      - "8081:80"
     environment:
       PMA_HOST: database
-      PMA_PORT: 3306
-      PMA_USER: sysdba
-      PMA_PASSWORD: masterkey
+      PMA_USER: root
+      PMA_PASSWORD: prestashop
+      PMA_PMADB: phpmyadmin
     restart: always
+    depends_on:
+      - database
 
   prestashop:
-    image: prestashop:1.7
+    image: prestashop/prestashop:1.7
     environment:
       DB_SERVER: database
       DB_NAME: prestashop
@@ -38,7 +42,9 @@ services:
       ADMIN_PASSWD: 
       PS_DOMAIN: localhost:8001
     ports:
-      - "8001:8001"
+      - "8080:80"
     volumes:
-      - ./:var/www/html:delegated
+      - shop:/var/www/html:delegated
     restart: always
+    depends_on:
+      - database
