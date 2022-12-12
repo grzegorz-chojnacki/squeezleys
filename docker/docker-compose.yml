@@ -15,7 +15,6 @@ services:
       MARIADB_DATABASE: prestashop
     restart: always
 
-  
   db-admin:
     image: phpmyadmin
     ports:
@@ -39,8 +38,8 @@ services:
       PS_INSTALL_AUTO: 1
       PS_LANGUAGE: pl
       PS_COUNTRY: pl
-      ADMIN_MAIL: 
-      ADMIN_PASSWD: 
+      ADMIN_MAIL: ${ADMIN_MAIL}
+      ADMIN_PASSWD: ${ADMIN_PASSWD}
       PS_DOMAIN: localhost:8080
       PS_FOLDER_INSTALL: install2
       PS_FOLDER_ADMIN: admin2
