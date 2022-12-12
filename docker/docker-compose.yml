@@ -37,8 +37,8 @@ services:
       DB_PASSWD: prestashop
       #PS_INSTALL_DB: 1
       PS_INSTALL_AUTO: 1
-      PS_LANGUAGE: "pl"
-      PS_COUNTRY: "PL"
+      PS_LANGUAGE: pl
+      PS_COUNTRY: pl
       ADMIN_MAIL: 
       ADMIN_PASSWD: 
       PS_DOMAIN: localhost:8080
