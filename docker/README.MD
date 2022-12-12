@@ -1,19 +1,10 @@
 # Odpalenie
 
-## Pierwsze odpalenie
-
-Ze wzgledu na brak sprawdania heartbeatu miedzy DB a prestashop, przy pierwszym odpaleniu prestashop wstanie zanim DB sie odpali
-
-Wystarczy zrobic
-
 ``docker-compose up``
 
-zamknac kontenery po odpaleniu bazy
 
-usunac volume prestashop
+# Dostep:
 
-i ponownie ``docker-compose up``
+``localhost:8080`` <- sklep
 
-## Kolejne odpalenia
-
-``docker-compose up``
+``localhost:8080/admin2`` <- admin
