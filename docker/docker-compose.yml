@@ -50,3 +50,9 @@ services:
     restart: always
     depends_on:
       - database
+
+  image-server:
+    image: httpd
+    volumes:
+      - ../data/images:/usr/local/apache2/htdocs/
+    restart: always
