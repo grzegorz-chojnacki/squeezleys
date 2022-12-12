@@ -36,11 +36,14 @@ services:
       DB_NAME: prestashop
       DB_PASSWD: prestashop
       #PS_INSTALL_DB: 1
+      PS_INSTALL_AUTO: 1
       PS_LANGUAGE: "pl"
       PS_COUNTRY: "PL"
-      ADMIN_MAIL:
+      ADMIN_MAIL: 
       ADMIN_PASSWD: 
-      PS_DOMAIN: localhost:8001
+      PS_DOMAIN: localhost:8080
+      PS_FOLDER_INSTALL: install2
+      PS_FOLDER_ADMIN: admin2
     ports:
       - "8080:80"
     volumes:
