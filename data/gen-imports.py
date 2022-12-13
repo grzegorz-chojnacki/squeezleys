@@ -71,9 +71,8 @@ import json
 # 65 Acessories  (x,y,z...)
 
 #
-FILE_PATH = 'http://image-server/'
+FILE_PATH = 'http://localhost/images/'
 
-PRODUCT_ID =  0
 ACTIVE =  1
 NAME =  2
 CATEGORIES =  3
@@ -91,56 +90,31 @@ URL_REWRITTEN = 40
 SHOW_PRICE = 46
 IMAGE_URLS = 47
 
-category_map = {
-  "strona-glowna": "Strona główna",
-  "2x2x2": "2x2x2",
-  "3x3x3": "3x3x3",
-  "4x4x4": "4x4x4",
-  "5x5x5": "5x5x5",
-  "dlugopisy": "Długopisy",
-  "fidget-toys": "Fidget toys",
-  "fun-zabawki": "Fun-zabawki",
-  "gniotki-antystresowe": "Gniotki antystresowe",
-  "gniotki-squishy": "Gniotki squishy",
-  "kostki-logiczne": "kostki logiczne",
-  "markery-alkoholowe": "Markery Alkoholowe",
-  "masy-plastyczne-slime": "Masy plastyczne",
-  "mystery-box": "Mystery BOX",
-  "piorniki": "Piórniki",
-  "pluszaki-i-maskotki": "Pluszaki i maskotki",
-  "popit": "Popit",
-  "slime": "Slime",
-  "zestawy-antystresowe": "Zestawy antystresowe",
-  "zestawy-kreatywne": "Zestawy kreatywne"
-}
-
 
 with open('products.json') as f:
     products = json.load(f)
 
 
-with open('import/categories.csv', 'w', newline='') as f:
+with open('categories.csv', 'w', newline='') as f:
     writer = csv.writer(f, delimiter=';', quotechar='"')
-
-    for idx, category in enumerate(category_map.values()):
+    categories = set(product["category"] for product in products)
+    for category in categories:
         if category == "Strona główna":
             continue
         row = [None]*12
-        row[PRODUCT_ID]         = idx + 10
         row[ACTIVE]             = 1
         row[NAME]               = category
         row[3]                  = 2
         writer.writerow(row)
 
-with open('import/products.csv', 'w', newline='') as f:
+with open('products.csv', 'w', newline='') as f:
     writer = csv.writer(f, delimiter=';', quotechar='"')
 
     for idx, product in enumerate(products):
         row = [None]*65
-        row[PRODUCT_ID]         = idx + 10
         row[ACTIVE]             = 1
         row[NAME]               = product['name']
-        row[CATEGORIES]         = category_map[product['category']]
+        row[CATEGORIES]         = product['category']
         row[PRICE_TAX_EXCLUDED] = product['base_price']
         row[ON_SALE]            = 1 if bool(product['discount']) else 0
         row[DISCOUNT_PERCENT]   = product['discount'].rstrip('%') if product['discount'] else ''
@@ -152,5 +126,5 @@ with open('import/products.csv', 'w', newline='') as f:
         row[SUMMARY]            = product["description_short"]
         row[DESCRIPTION]        = product["description"]
         row[SHOW_PRICE]         = 1
-        row[IMAGE_URLS]         = ','.join(map(lambda s: FILE_PATH + s, product["image_urls"]))
+        row[IMAGE_URLS]         = ','.join(map(lambda s: FILE_PATH + s, product["images"]))
         writer.writerow(row)
