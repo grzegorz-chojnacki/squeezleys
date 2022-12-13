@@ -1,2 +1,3 @@
 prestashop/
 docker/.env
+venv/
