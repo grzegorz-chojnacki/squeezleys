@@ -7,16 +7,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-with open('../data/products.json') as f:
-     products = json.load(f)
-print('Loaded products')
-
-variantable = [ product for product in products if len(product["variants"]) > 1]
-print(f'Found {len(variantable)} products with variants')
-
 with open('../data/raw_data.json') as f:
     raw_data = json.load(f)
 print('Loaded raw_data')
+
+variantable = [ entry for entry in raw_data if 'has_variants' in entry]
+print(f'Found {len(variantable)} products with variants')
 
 urls = set()
 for variant in variantable:
