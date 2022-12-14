@@ -1,3 +1,4 @@
 prestashop/
 docker/.env
 venv/
+data/*.csv
