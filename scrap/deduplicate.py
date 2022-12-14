@@ -1,7 +1,7 @@
 #!/bin/env python3
 
 import json
-DATA_PATH = '../data/raw_data.json'
+DATA_PATH = 'scrapped.json'
 
 with open(DATA_PATH) as f:
     products = json.load(f)

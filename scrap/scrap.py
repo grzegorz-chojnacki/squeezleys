@@ -25,7 +25,7 @@ targets = [
     Target('223-mystery-box', 1),
 ]
 
-raw_data = []
+scrapped = []
 
 
 def fetch(url: str):
@@ -48,7 +48,7 @@ def scrap_product(href: str):
     try:
         soup = fetch(href)
         obj = json.loads(soup.find(id='product-details')['data-product'])
-        raw_data.append(obj)
+        scrapped.append(obj)
 
         variants = []
         for variant_type in soup.find_all('div', class_='product-variants'):
@@ -57,7 +57,7 @@ def scrap_product(href: str):
 
             name, = variant_type.find('div', class_='label').string,
             if name == 'Kolor':
-                raw_data['has_variants'] = True
+                scrapped['has_variants'] = True
 
     except Exception as e:
         print(f'Failed to process product #{product_count}')
@@ -83,6 +83,6 @@ def scrap_target(href: str, pages: int):
 for target in targets:
     scrap_target(target.href, target.pages)
 
-with open('raw_data.json', 'w') as f:
-    json.dump(raw_data, f, ensure_ascii=False, indent=4)
-print('Saved raw data')
+with open('scrapped.json', 'w') as f:
+    json.dump(scrapped, f, ensure_ascii=False, indent=4)
+print('Saved scrapped products')

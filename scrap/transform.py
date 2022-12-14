@@ -33,20 +33,20 @@ def trim(variant):
     return variant
 
 
-with open('../data/raw_data.json') as f:
-    raw_data = json.load(f)
+with open('scrapped.json') as f:
+    scrapped = json.load(f)
 
 products = []
 image_urls_all = set()
 
-for entry in raw_data:
+for entry in scrapped:
     # Skip adding variant products
     if any(p['name'] == entry['name'] for p in products):
         continue
 
     product = transform(entry)
     product['variants'] = [
-        trim(transform(variant)) for variant in raw_data
+        trim(transform(variant)) for variant in scrapped
         if variant['name'] == entry['name']
         and 'attributes' in variant and '3' in variant['attributes']
     ]
@@ -56,7 +56,7 @@ for entry in raw_data:
     products.append(product)
 
 
-with open('../data/products.json', 'w') as f:
+with open('products.json', 'w') as f:
     json.dump(products, f, ensure_ascii=False, indent=4)
 
 with open('image-urls', 'w') as f:
