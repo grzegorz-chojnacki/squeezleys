@@ -1,15 +1,7 @@
 #!/bin/env python3
 import json
 
-with open('../data/raw_data.json') as f:
-    raw_data = json.load(f)
-print('Loaded raw data')
-
-URL_PREFIX='https://squishysquishies.pl/'
-
-products = []
-image_urls_all = set()
-for entry in raw_data:
+def transform(entry):
     image_urls = [image['bySize']['large_default']['url']
                       for image in entry['images']]
 
@@ -24,11 +16,40 @@ for entry in raw_data:
         'description': entry['description'],
         'description_short': entry['description_short'],
         'discount': entry['discount_percentage_absolute'],
-        'color': None,
         'images': image_paths,
+        'color': entry['attributes']['3']['name']
+                    if 'attributes' in entry and '3' in entry['attributes']
+                    else None
     }
-    if 'attributes' in entry and '3' in entry['attributes']:
-        product["color"] = entry['attributes']['3']['name']
+
+    return product
+
+def trim(variant):
+    for key in ['name', 'category', 'price', 'base_price', 'description',
+                'description_short', 'discount']:
+        variant.pop(key)
+    return variant
+
+
+with open('../data/raw_data.json') as f:
+    raw_data = json.load(f)
+print('Loaded raw data')
+
+URL_PREFIX='https://squishysquishies.pl/'
+
+products = []
+image_urls_all = set()
+for entry in raw_data:
+    # Skip adding variant products
+    if any(p['name'] == entry['name'] for p in products):
+        continue
+
+    product = transform(entry)
+    product['variants'] = [
+        trim(transform(variant)) for variant in raw_data
+        if variant['name'] == entry['name']
+        and 'attributes' in variant and '3' in variant['attributes']
+    ][1:]
 
     products.append(product)
 
