@@ -1,6 +1,8 @@
 #!/bin/env python3
 import json
 
+URL_PREFIX='https://squishysquishies.pl/'
+
 def transform(entry):
     image_urls = [image['bySize']['large_default']['url']
                       for image in entry['images']]
@@ -33,12 +35,10 @@ def trim(variant):
 
 with open('../data/raw_data.json') as f:
     raw_data = json.load(f)
-print('Loaded raw data')
-
-URL_PREFIX='https://squishysquishies.pl/'
 
 products = []
 image_urls_all = set()
+
 for entry in raw_data:
     # Skip adding variant products
     if any(p['name'] == entry['name'] for p in products):
@@ -49,16 +49,15 @@ for entry in raw_data:
         trim(transform(variant)) for variant in raw_data
         if variant['name'] == entry['name']
         and 'attributes' in variant and '3' in variant['attributes']
-    ][1:]
+    ]
+    if len(product['variants']) > 0:
+        product['available'] = sum(v['available'] for v in product['variants'])
 
     products.append(product)
 
-print('Transformed products')
 
 with open('../data/products.json', 'w') as f:
     json.dump(products, f, ensure_ascii=False, indent=4)
-print('Saved products')
 
 with open('image-urls', 'w') as f:
     f.writelines(map(lambda x: x+'\n', sorted(image_urls_all)))
-print('Saved image urls')

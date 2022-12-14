@@ -222,7 +222,7 @@
         "category": "Gniotki antystresowe",
         "price": 24.99,
         "base_price": 20.317073,
-        "available": 35,
+        "available": 66,
         "description": "<h2>Pluszowy Jednorożec Kawaii</h2>\r\n<h3>* miły w dotyku, umili czas</h3>\r\n<p>* odpręży, miło przelewające sie kuleczki żelowe</p>\r\n<p>* milutka maskotka</p>\r\n<p></p>\r\n<p>* Rewelacyjny do ćwiczenia rączki w zabawny sposób, rekomendowany również jako narzędzie do rehabilitacji.</p>\r\n<p>* Ćwiczy małą motorykę to doskonałe narzędzia do pracy podczas zajęć sensorycznych rozwijających małą motorykę</p>\r\n<p>* Dorosłym osobom pomoże odreagować stres i wyciszyć emocje. Pełni funkcję gniotka odstresowywującego.</p>\r\n<p></p>\r\n<p>Uwaga! Przeznaczone do użytku pod nadzorem dorosłego.</p>",
         "description_short": "<p>Pluszowy gniotek antystresowy z kuleczkami ORBEEZ</p>\r\n<h2>jednorożec lub rekin</h2>\r\n<p>Rewelacyjny ściskacz z dużą ilością kuleczek ORBEEZ i brokatu.</p>\r\n<p>Gniotek squishy 1szt - doskonale ugniatający się. Z kuleczkami wewnątrz. Klasyczny gniotek w ciekawej oprawie. Możliwość ugniatania i zabawy. Dodatkowo maskotka !</p>",
         "discount": null,
@@ -234,6 +234,16 @@
         ],
         "color": "Niebieski",
         "variants": [
+            {
+                "available": 35,
+                "images": [
+                    "19215-large_default-jellies-orbeez-squiqshy-maskotka.jpg",
+                    "19216-large_default-jellies-orbeez-squiqshy-maskotka.jpg",
+                    "19217-large_default-jellies-orbeez-squiqshy-maskotka.jpg",
+                    "19218-large_default-jellies-orbeez-squiqshy-maskotka.jpg"
+                ],
+                "color": "Niebieski"
+            },
             {
                 "available": 31,
                 "images": [
@@ -728,6 +738,24 @@
         "color": "Zielony",
         "variants": [
             {
+                "available": 9,
+                "images": [
+                    "27401-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27391-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27392-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27393-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27394-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27395-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27396-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27397-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27378-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27379-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27380-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
+                    "27398-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg"
+                ],
+                "color": "Zielony"
+            },
+            {
                 "available": 0,
                 "images": [
                     "27400-large_default-slime-z-kula-galaxy-masa-plastyczna.jpg",
@@ -766,7 +794,7 @@
         "category": "Masy plastyczne, Slime",
         "price": 29.99,
         "base_price": 24.382114,
-        "available": 14,
+        "available": 19,
         "description": "<p><strong>Rewelacyjny Slime Pack</strong> - 2 butelki i aż tyle możliwości = 2 kolory Slime, 2 kule z kolorowymi kulkami, 2 zabawki zanurzone w styropianowych kulkach.</p>\n<p>Oferta zawiera komplet 2 sztuk butelek, każda butelka składa się z dwóch części, w kuli znajdują się kolorowe posypki, kulki styropianowe w pięknych kolorach. Dolna część to masa Slime.</p>\n<p>* Krystalicznej masie trzeba pozwolić się stopniowo wylewać i przelewać gdyż jest o konsystencji streach. Zbyt szybko wyciągana zachowuje się jak galaretka i się urywa nie zaś wylewa. Do uzyskania efektu przelewania się należy ją rozgrzać w dłoniach poprzez ugniatanie. Z ugniataniem nabiera ona formy streatch.</p>\n<p>* Śliczne zapachy i piękne kolory</p>\n<p>Trzy butelki gwarantują udaną zabawę na wiele godzin.</p>\n<p>- rzeczywiste zdjęcia -</p>\n<h3>Rewelacyjna opcja dla lubiących zabawy ze slime.</h3>",
         "description_short": "<p>SLIME - MAGIC BALL</p>\n<p>Każda kryje w sobie zabaweczki, mięciutkie Gniotki o wesołych wzorach.</p>\n<p> </p>",
         "discount": null,
@@ -781,6 +809,19 @@
         ],
         "color": "Pomarańczowy",
         "variants": [
+            {
+                "available": 14,
+                "images": [
+                    "27406-large_default-zestaw-slime-z-zabawka-squishy-masa-plastyczna.jpg",
+                    "27291-large_default-zestaw-slime-z-zabawka-squishy-masa-plastyczna.jpg",
+                    "27292-large_default-zestaw-slime-z-zabawka-squishy-masa-plastyczna.jpg",
+                    "27293-large_default-zestaw-slime-z-zabawka-squishy-masa-plastyczna.jpg",
+                    "27294-large_default-zestaw-slime-z-zabawka-squishy-masa-plastyczna.jpg",
+                    "27295-large_default-zestaw-slime-z-zabawka-squishy-masa-plastyczna.jpg",
+                    "27296-large_default-zestaw-slime-z-zabawka-squishy-masa-plastyczna.jpg"
+                ],
+                "color": "Pomarańczowy"
+            },
             {
                 "available": 0,
                 "images": [
@@ -994,7 +1035,7 @@
         "category": "Fidget toys",
         "price": 42.99,
         "base_price": 34.95122,
-        "available": 22,
+        "available": 39,
         "description": "<p>Idealna dla małych księżniczek uwielbiających magiczne pegazy. Doskonale przyda się na letnich wyprawach jako uzupełnienie bajecznej stylizacji</p>\r\n<p>Wykonana z mięciutkiego i łatwego do czyszczenia silikonu. Zamykana na suwak. Dodatkową zaletą jest jej wodoodporność.</p>\r\n<p>Materiał elastyczny: Silikon</p>\r\n<p>rzeczywiste zdjęcia produktu</p>\r\n<p> </p>\r\n<p>Jednorożec fidget toy Torebeczka Saszetka<br />Wymiary:</p>\r\n<p>Długość torebki 11,5cm, długość całkowita wraz z uchwytami do mocowania paska to 21cm.</p>\r\n<p>Szerokość boku 3,3cm.</p>\r\n<p>Wysokość torebki to 7,5cm bez rogu, 10cm z rogiem.</p>\r\n<p>Wysokość Długa smycz z regulacją i zapięciem. Maksymalna długość paska to 62cm z możliwością regulacji do 44cm (obwód pasa).</p>\r\n<p>Nerka sprzedawana bez błyszczyka ukazującego rozmiar saszetki.</p>",
         "description_short": "<p>Torebka typu, nerka na pas.<br />Motyw: Piękny Jednorożec z zamkniętymi oczyma. <br />Rewelacyjna saszetka idealna na najpotrzebniejsze drobiazgi.</p>",
         "discount": null,
@@ -1007,6 +1048,17 @@
         ],
         "color": "fuksja",
         "variants": [
+            {
+                "available": 22,
+                "images": [
+                    "23816-large_default-torebka-nerka-jednorozec-fidget-rozowa.jpg",
+                    "23813-large_default-torebka-nerka-jednorozec-fidget-rozowa.jpg",
+                    "23814-large_default-torebka-nerka-jednorozec-fidget-rozowa.jpg",
+                    "23815-large_default-torebka-nerka-jednorozec-fidget-rozowa.jpg",
+                    "23827-large_default-torebka-nerka-jednorozec-fidget-rozowa.jpg"
+                ],
+                "color": "fuksja"
+            },
             {
                 "available": 2,
                 "images": [
@@ -1185,6 +1237,14 @@
                     "23440-large_default-po-pit-spiderman.jpg",
                     "23441-large_default-po-pit-spiderman.jpg"
                 ],
+                "color": "czarny"
+            },
+            {
+                "available": 0,
+                "images": [
+                    "23440-large_default-po-pit-spiderman.jpg",
+                    "23441-large_default-po-pit-spiderman.jpg"
+                ],
                 "color": "Fioletowy"
             },
             {
@@ -1236,6 +1296,13 @@
         ],
         "color": "jasny róż",
         "variants": [
+            {
+                "available": 4,
+                "images": [
+                    "23385-large_default-huggy-wuggy-popit-push-bubble-fidget.jpg"
+                ],
+                "color": "jasny róż"
+            },
             {
                 "available": 0,
                 "images": [
@@ -2157,7 +2224,7 @@
         "category": "Fidget toys",
         "price": 24.99,
         "base_price": 20.317073,
-        "available": 38,
+        "available": 88,
         "description": "<p>bąbelki do wciskania<br />wyraźny dźwięk POP! podczas wciskania</p>\n<p>wykonana z wysokiej jakości tworzywa ABS</p>\n<p>Zabawka stymuluje zmysł dotyku i rozwój motoryki małej u dzieci.</p>\n<p>BĄBELKI DO WCISKANIA, ZABAWKA SENSORYCZNA</p>\n<p>---</p>\n<p>Rzeczywiste zdjęcia. W przypadku braku wskazania w formularzu zakupowym koloru panelu fioletowego lub zielonego, kolor niespodzianka.</p>",
         "description_short": "<p>Fidget Toy Dimple<br />WYJĄTKOWO PIĘKNA KOLORYSTYKA</p>",
         "discount": null,
@@ -2168,6 +2235,15 @@
         ],
         "color": "Fioletowy",
         "variants": [
+            {
+                "available": 38,
+                "images": [
+                    "19933-large_default-fidget-toy-pop-it-dimple-z-brokatem.jpg",
+                    "19927-large_default-fidget-toy-pop-it-dimple-z-brokatem.jpg",
+                    "19928-large_default-fidget-toy-pop-it-dimple-z-brokatem.jpg"
+                ],
+                "color": "Fioletowy"
+            },
             {
                 "available": 50,
                 "images": [
@@ -2187,7 +2263,7 @@
         "category": "Gniotki antystresowe",
         "price": 14.99,
         "base_price": 12.186992,
-        "available": 12,
+        "available": 48,
         "description": "",
         "description_short": "<p>Gniotek Sticky Delfinek - 1szt.</p>\r\n<h2>Gniotek z kuleczkami wewnątrz.</h2>\r\n<p>Ciekawy przylegający do dłoni i bardzo bardzo naciągający się.</p>\r\n<p>Do wyboru kolor: niebieski, limonowy, fluo i koral.</p>\r\n<p>W przypadku braku wskazania koloru, kolor niespodzianka.</p>\r\n<p>Możliwość wyboru kolorystyki dla chłopca lub dla dziewczynki. </p>",
         "discount": null,
@@ -2199,6 +2275,16 @@
         ],
         "color": "Czerwony",
         "variants": [
+            {
+                "available": 12,
+                "images": [
+                    "19899-large_default-sticky-gniotek-klejacy-zwierzatka.jpg",
+                    "19902-large_default-sticky-gniotek-klejacy-zwierzatka.jpg",
+                    "19900-large_default-sticky-gniotek-klejacy-zwierzatka.jpg",
+                    "19901-large_default-sticky-gniotek-klejacy-zwierzatka.jpg"
+                ],
+                "color": "Czerwony"
+            },
             {
                 "available": 12,
                 "images": [
@@ -2568,7 +2654,7 @@
         "category": "Popit",
         "price": 29.99,
         "base_price": 24.382114,
-        "available": 84,
+        "available": 86,
         "description": "<p>REWELACYJNY PANEL SENSORYCZNY MOTORYCZNY</p>\n<p>WSPANIAŁA SŁODZIUTKA OWIECZKA</p>\n<p><br />Zabawka antystresowa nawiązuje do lubianej folii bąbelkowej. Można pstrykać z bąbelków w nieskończoność. Podczas tej zabawy możemy się odprężyć i rozluźnić. Dodatkowo przyciskaniu towarzyszy charakterystyczne dźwięk.</p>\n<p>* pozwala poprawić koncentrację</p>\n<p>* poprawi nastrój</p>\n<p>* ćwiczy sprawność motoryczną</p>\n<p>* wyjątkowo wesoły motyw</p>\n<p>Zabawka jest również doskonałym narzędziem do pracy podczas zajęć sensorycznych rozwijających małą motorykę dorosłym zaś pomoże odreagować stres i wyciszyć emocje.</p>\n<p>Kolorystyka dziewczęca lub chłopięca. Wybór prosimy wskazać w formularzu zakupowym w polu wiadomość dla sprzedawcy.</p>\n<p>Materiał elastyczny: Silicon</p>",
         "description_short": "<p>Najsłodszy popit - owieczka</p>\n<p>do wyboru: niebieski lub różowy</p>",
         "discount": null,
@@ -2579,6 +2665,15 @@
         ],
         "color": "jasny róż",
         "variants": [
+            {
+                "available": 84,
+                "images": [
+                    "19716-large_default-popit-owieczka-fidget-toy-bubble.jpg",
+                    "19715-large_default-popit-owieczka-fidget-toy-bubble.jpg",
+                    "19718-large_default-popit-owieczka-fidget-toy-bubble.jpg"
+                ],
+                "color": "jasny róż"
+            },
             {
                 "available": 2,
                 "images": [
@@ -2644,6 +2739,14 @@
         ],
         "color": "czarny",
         "variants": [
+            {
+                "available": 4,
+                "images": [
+                    "19629-large_default-spinner-simple-dimple-x-5.jpg",
+                    "19630-large_default-spinner-simple-dimple-x-5.jpg"
+                ],
+                "color": "czarny"
+            },
             {
                 "available": 0,
                 "images": [
@@ -2720,6 +2823,16 @@
         ],
         "color": "czarny",
         "variants": [
+            {
+                "available": 1,
+                "images": [
+                    "19531-large_default-spinner-dimple-fidget-toy.jpg",
+                    "19530-large_default-spinner-dimple-fidget-toy.jpg",
+                    "19535-large_default-spinner-dimple-fidget-toy.jpg",
+                    "19536-large_default-spinner-dimple-fidget-toy.jpg"
+                ],
+                "color": "czarny"
+            },
             {
                 "available": 0,
                 "images": [
@@ -3129,7 +3242,7 @@
         "category": "Fidget toys",
         "price": 24.99,
         "base_price": 20.317073,
-        "available": 0,
+        "available": 5,
         "description": "",
         "description_short": "<p>Among us dwustronny pluszak</p><p>łatwa zmiana w impostora</p>",
         "discount": null,
@@ -3141,6 +3254,16 @@
         ],
         "color": "Czerwony",
         "variants": [
+            {
+                "available": 0,
+                "images": [
+                    "18843-large_default-maskotka-dwustronna-among-us-impostor.jpg",
+                    "18835-large_default-maskotka-dwustronna-among-us-impostor.jpg",
+                    "18836-large_default-maskotka-dwustronna-among-us-impostor.jpg",
+                    "18847-large_default-maskotka-dwustronna-among-us-impostor.jpg"
+                ],
+                "color": "Czerwony"
+            },
             {
                 "available": 2,
                 "images": [
@@ -3196,7 +3319,7 @@
         "category": "Fidget toys",
         "price": 24.99,
         "base_price": 20.317073,
-        "available": 16,
+        "available": 49,
         "description": "<p>Maskotka Octopus - doskonały pomysł na określanie i wyrażanie emocji.</p>\r\n<p>To również sprytny pretekst do rozmowy o nich.</p>\r\n<p>Dwukolorowa, dwustronna i mięciutka.</p>\r\n<p><img src=\"chrome-extension://cldfkgliklaggnopdgnepabenoiiopbi/ptlite-icon_32.png\" id=\"cldfkgliklaggnopdgnepabenoiiopbi\" style=\"display: block; top: 1463px; left: 1381px; z-index: 1999; position: absolute; cursor: pointer; background-color: transparent; background-image: none; border: none; opacity: 1; max-width: 24px; max-height: 24px; transition: all 50ms ease 0s;\" /><img src=\"/18266-pdt_1400/octopus-osmiornica-pluszowa-maskotka-dwustronna.jpg\" alt=\"\" width=\"1400\" height=\"1400\" /></p>\r\n<p>W przypadku braku wskazania we wiadomości dla sprzedającego bezpośrednio w formularzu zakupowym \"pole wiadomość dla sprzedawcy\" - wzór niespodzianka, zawsze pięknie tęczowy widoczny na zdjęciach.</p>\r\n<p>Można wskazać również opcję kolorystyczną dla dziewczynki lub chłopca.</p>\r\n<p></p>\r\n<p>Uwaga! Zabawki przeznaczone do użytku pod nadzorem dorosłego.</p>",
         "description_short": "<p>Maskotka Ośmiorniczka Octupus - dwustronna</p>\r\n<p><span style=\"font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif; font-size: 13.3333px;\">Dostępne różne kolory.</span></p>",
         "discount": null,
@@ -3208,6 +3331,16 @@
         ],
         "color": "zielony limonka",
         "variants": [
+            {
+                "available": 16,
+                "images": [
+                    "18267-large_default-octopus-osmiornica-pluszowa-maskotka-dwustronna.jpg",
+                    "18260-large_default-octopus-osmiornica-pluszowa-maskotka-dwustronna.jpg",
+                    "18264-large_default-octopus-osmiornica-pluszowa-maskotka-dwustronna.jpg",
+                    "18265-large_default-octopus-osmiornica-pluszowa-maskotka-dwustronna.jpg"
+                ],
+                "color": "zielony limonka"
+            },
             {
                 "available": 19,
                 "images": [
@@ -3562,6 +3695,14 @@
         "color": "czarny",
         "variants": [
             {
+                "available": 311,
+                "images": [
+                    "18595-large_default-kostka-antystresowa-odstresowujaca-fidget-cube.jpg",
+                    "18417-large_default-kostka-antystresowa-odstresowujaca-fidget-cube.jpg"
+                ],
+                "color": "czarny"
+            },
+            {
                 "available": 0,
                 "images": [
                     "18544-large_default-kostka-antystresowa-odstresowujaca-fidget-cube.jpg",
@@ -3735,6 +3876,16 @@
         ],
         "color": "róż",
         "variants": [
+            {
+                "available": 0,
+                "images": [
+                    "27289-large_default-super-slime-masa-sensoryczna-galaxy-diy.jpg",
+                    "27288-large_default-super-slime-masa-sensoryczna-galaxy-diy.jpg",
+                    "27290-large_default-super-slime-masa-sensoryczna-galaxy-diy.jpg",
+                    "27287-large_default-super-slime-masa-sensoryczna-galaxy-diy.jpg"
+                ],
+                "color": "róż"
+            },
             {
                 "available": 0,
                 "images": [
@@ -4009,7 +4160,18 @@
             "8448-large_default-slime-unicorn-poop.jpg"
         ],
         "color": "Niebieski",
-        "variants": []
+        "variants": [
+            {
+                "available": 45,
+                "images": [
+                    "8446-large_default-slime-unicorn-poop.jpg",
+                    "8445-large_default-slime-unicorn-poop.jpg",
+                    "8447-large_default-slime-unicorn-poop.jpg",
+                    "8448-large_default-slime-unicorn-poop.jpg"
+                ],
+                "color": "Niebieski"
+            }
+        ]
     },
     {
         "name": "Długopis wyskakujący jednorożec ANYSTRESOWY FIDGET TOY",
@@ -4056,7 +4218,7 @@
         "category": "Piórniki",
         "price": 28.99,
         "base_price": 23.569106,
-        "available": 22,
+        "available": 109,
         "description": "<p>Polecamy jako piórnik, kosmetyczkę, lub organizer do torebki. Saszetka wykonana została z łatwego do czyszczenia materiału PVC - można go z łatwością wymyć, dzięki czemu doskonała będzie zarówno na kosmetyki i kredki jak i na długopisy i inne akcesoria szkolne.</p>\r\n<p>Wymiary:</p>\r\n<p>długość 21 cm</p>\r\n<p>szerokość 7 cm</p>\r\n<p>wysokość 9 cm</p>\r\n<p>_____________________________________</p>\r\n<p>DŁUGOPISY WIDNIEJĄCE NA ZDJĘCIACH SĄ ELEMENTEM STYLIZACJI MAJĄCEJ NA CELU UKAZANIE WIELKOŚCI. NIE SĄ SPRZEDAWANE Z PIÓRNIKIEM.</p>",
         "description_short": "<p>Piórnik z super wygodnym, dużym suwakiem.<br />Transparentny z niesamowitym efektem hologramu. Materiał z którego został wykonany - przepięknie opalizuje w świetle, odbijając wszystkie kolory niczym kameleon.</p>\r\n<p>Efekt jest rewelacyjny !!!</p>\r\n<p>Dodatkowo podkreślają go modne wzory.</p>\r\n<p>Do wyboru:</p>\r\n<p>holo pantera</p>\r\n<p>holo syrenka</p>\r\n<p>holo róż</p>\r\n<p>holo plastry miodu</p>\r\n<p> </p>",
         "discount": null,
@@ -4073,6 +4235,21 @@
         ],
         "color": "Pomarańczowy",
         "variants": [
+            {
+                "available": 22,
+                "images": [
+                    "25771-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg",
+                    "25768-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg",
+                    "25769-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg",
+                    "25770-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg",
+                    "25772-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg",
+                    "25773-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg",
+                    "25774-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg",
+                    "25775-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg",
+                    "25776-large_default-piornik-szkolny-holo-z-duzym-suwakiem.jpg"
+                ],
+                "color": "Pomarańczowy"
+            },
             {
                 "available": 30,
                 "images": [
@@ -4153,7 +4330,7 @@
         "category": "Strona główna",
         "price": 26.99,
         "base_price": 21.943903,
-        "available": 30,
+        "available": 120,
         "description": "<p>Piórnik Zipper HOLO Jednorożec<br />Polecamy jako piórnik, kosmetyczkę, lub organizer do torebki. Saszetka wykonana została z łatwego do czyszczenia materiału PVC - można go z łatwością wymyć, dzięki czemu doskonała będzie zarówno na kosmetyki i kredki jak i na długopisy i inne akcesoria szkolne.</p>\r\n<p>Wymiary:</p>\r\n<p>długość 21 cm</p>\r\n<p>szerokość 7 cm</p>\r\n<p>wysokość 9 cm</p>\r\n<p>_____________________________________</p>\r\n<p>DŁUGOPISY WIDNIEJĄCE NA ZDJĘCIACH SĄ ELEMENTEM STYLIZACJI MAJĄCEJ NA CELU UKAZANIE WIELKOŚCI. NIE SĄ SPRZEDAWANE Z PIÓRNIKIEM.</p>",
         "description_short": "<h2>Piórnik z super wygodnym, dużym suwakiem.</h2>\r\n<p><br />Transparentny z niesamowitym efektem hologramu. Materiał z którego został wykonany - przepięknie opalizuje w świetle, odbijając wszystkie kolory niczym kameleon. Efekt jest rewelacyjny !!! Dodatkowo podkreślają go wzory jednorożców.</p>",
         "discount": "10%",
@@ -4166,6 +4343,17 @@
         ],
         "color": "Żółty",
         "variants": [
+            {
+                "available": 30,
+                "images": [
+                    "20699-large_default-piornik-szkolny-z-duzym-suwakiem-jednorozec-holo.jpg",
+                    "20689-large_default-piornik-szkolny-z-duzym-suwakiem-jednorozec-holo.jpg",
+                    "20690-large_default-piornik-szkolny-z-duzym-suwakiem-jednorozec-holo.jpg",
+                    "20691-large_default-piornik-szkolny-z-duzym-suwakiem-jednorozec-holo.jpg",
+                    "20696-large_default-piornik-szkolny-z-duzym-suwakiem-jednorozec-holo.jpg"
+                ],
+                "color": "Żółty"
+            },
             {
                 "available": 30,
                 "images": [
@@ -4232,7 +4420,28 @@
             "20717-large_default-piornik-z-duzym-suwakiem-teczowy.jpg"
         ],
         "color": "wielokolorowy",
-        "variants": []
+        "variants": [
+            {
+                "available": 100,
+                "images": [
+                    "20523-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20524-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20525-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20526-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20528-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20529-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20530-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20531-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20532-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20533-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20718-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20715-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20716-large_default-piornik-z-duzym-suwakiem-teczowy.jpg",
+                    "20717-large_default-piornik-z-duzym-suwakiem-teczowy.jpg"
+                ],
+                "color": "wielokolorowy"
+            }
+        ]
     },
     {
         "name": "Markery alkoholowe Touch torba zestaw 80 szt dwustronne",
