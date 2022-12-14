@@ -8,7 +8,7 @@ FILE_PATH = 'http://localhost/images/'
 
 
 def write_all(filepath, rows):
-    with open(filepath, 'w', newline='') as f:
+    with open(f'../data/{filepath}', 'w', newline='') as f:
         writer = csv.writer(f, delimiter=';', quotechar='"')
         writer.writerow(rows[0].keys())
         writer.writerows(row.values() for row in rows)
@@ -21,7 +21,7 @@ categories_rows = []
 products_rows = []
 combinations_rows = []
 
-categories = set(product['category'] for product in products)
+categories = sorted(set(product['category'] for product in products))
 for idx, category in enumerate(categories):
     idx += 10 # offset indecies as some of the first are reserved
     if category == 'Strona główna':

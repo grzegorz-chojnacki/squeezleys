@@ -1,4 +1,5 @@
 prestashop/
 docker/.env
 venv/
-data/*.csv
+scrap/products.json
+scrap/variants.json
