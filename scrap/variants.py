@@ -42,6 +42,6 @@ for url in urls:
         print(f'Found color: {obj["attributes"]["3"]["name"]}')
     time.sleep(2)
 
-with open('variants.json', 'w') as f:
+with open('variants.json', 'a') as f:
     json.dump(variants, f, ensure_ascii=False, indent=4)
 print('Saved raw data')
