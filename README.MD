@@ -3,8 +3,8 @@
 ## Inicjalizacja
 Utwórz plik `docker/.env` z adresem email i hasłem administratora:
 ```sh
-  ADMIN_MAIL=<email>
-  ADMIN_PASSWD=<hasło>
+  ADMIN_PASSWORD=<hasło>
+  SMTP_PASSWORD=<haslo>
 ```
 
 ## Uruchamianie
@@ -35,13 +35,19 @@ $ docker-compose down
 $ docker volume rm docker_db_data docker_shop
 ```
 
+lub
+
+```bash
+docker-compose up --build --force-recreate
+```
+
 ## Dostep
 
-| Endpoint                | Opis                  |
-| ----------------------- | --------------------- |
-| `localhost:8080`        | Sklep                 |
-| `localhost:8080/admin2` | Panel administracyjny |
-| `localhost:8081`        | Panel PHPMyAdmin      |
+| Endpoint                        | Opis                  |
+| ------------------------------- | --------------------- |
+| `localhost:80`                  | Sklep                 |
+| `localhost:8080/administration` | Panel administracyjny |
+| `localhost:8081`                | Panel PHPMyAdmin      |
 
 
 ## Ponowny scrapping
