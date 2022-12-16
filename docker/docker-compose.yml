@@ -2,8 +2,9 @@ version: '3'
 
 volumes:
   db-data:
-  var:
+    driver: local
   shop:
+    driver: local
 
 services:
   database:
@@ -30,24 +31,29 @@ services:
       - database
 
   prestashop:
-    image: prestashop/prestashop:1.7
+    image: docker.io/bitnami/prestashop:1.7
     environment:
-      DB_SERVER: database
-      DB_NAME: prestashop
-      DB_PASSWD: prestashop
-      #PS_INSTALL_DB: 1
-      PS_INSTALL_AUTO: 1
-      PS_LANGUAGE: pl
-      PS_COUNTRY: pl
-      ADMIN_MAIL: 
-      ADMIN_PASSWD: 
-      PS_DOMAIN: localhost:8080
-      PS_FOLDER_INSTALL: install2
-      PS_FOLDER_ADMIN: admin2
+      PRESTASHOP_DATABASE_HOST: database
+      PRESTASHOP_DATABASE_NAME: prestashop
+      PRESTASHOP_DATABASE_USER: root
+      PRESTASHOP_DATABASE_PASSWORD: prestashop
+      PRESTASHOP_ENABLE_HTTPS: yes
+      PRESTASHOP_SMTP_HOST: smtp.gmail.com
+      PRESTASHOP_SMTP_PORT: 587
+      PRESTASHOP_SMTP_USER: squeezleys@gmail.com
+      PRESTASHOP_SMTP_PASSWORD: $SMTP_PASSOWRD
+      PRESTASHOP_LANGUAGE: pl
+      PRESTASHOP_COUNTRY: pl
+      PRESTASHOP_FIRST_NAME: Lukasz
+      PRESTASHOP_LAST_NAME: Milewski
+      PRESTASHOP_EMAIL: squeezleys@gmail.com
+      PRESTASHOP_PASSWORD: $ADMIN_PASSWORD
     ports:
-      - "8080:80"
+      - "80:8080"
+      - "443:8443"
     volumes:
       - shop:/var/www/html:delegated
+      - ./preinstall:/tmp/pre-install-scripts
     restart: always
     depends_on:
       - database
