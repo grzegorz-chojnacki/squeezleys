@@ -3,8 +3,8 @@
 ## Inicjalizacja
 Utwórz plik `docker/.env` z adresem email i hasłem administratora:
 ```sh
-  ADMIN_MAIL=<email>
-  ADMIN_PASSWD=<hasło>
+  ADMIN_PASSWORD=<hasło>
+  SMTP_PASSWORD=<haslo>
 ```
 
 ## Uruchamianie
