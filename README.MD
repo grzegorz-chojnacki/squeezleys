@@ -25,8 +25,6 @@ Tu należy kolejno zaimportować pliki CSV z katalogu `./data/`:
 
 Przy imporcie warto zaznaczyć usunięcie istniejących kategorii/produktów/kombinacji i wymuszenie używania ID.
 
-Należy upewnić się, że kolumny zostały dobrze odwzorowane w narzędziu importowania.
-
 ## Przywrócenie ustawień domyślnych
 
 ```console
