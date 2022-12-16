@@ -25,8 +25,7 @@ targets = [
     Target('223-mystery-box', 1),
 ]
 
-products = []
-raw_data = []
+scrapped = []
 
 
 def fetch(url: str):
@@ -49,9 +48,7 @@ def scrap_product(href: str):
     try:
         soup = fetch(href)
         obj = json.loads(soup.find(id='product-details')['data-product'])
-        raw_data.append(obj)
-        image_urls = [image['bySize']['large_default']['url']
-                      for image in obj['images']]
+        scrapped.append(obj)
 
         variants = []
         for variant_type in soup.find_all('div', class_='product-variants'):
@@ -60,28 +57,8 @@ def scrap_product(href: str):
 
             name, = variant_type.find('div', class_='label').string,
             if name == 'Kolor':
-                containers = variant_type.find_all(
-                    'label', class_='label-color')
-                for container in containers:
-                    variants.append({
-                        'label': container.find('span', class_='sr-only').string,
-                        'value': container.find('span', class_='color')['style'].lstrip('background-color: '),
-                    })
+                scrapped['has_variants'] = True
 
-        product = {
-            'name': obj['name'],
-            'category': obj['category'],
-            'price': obj['price_amount'],
-            'base_price': obj['price_without_reduction'],
-            'available': obj['quantity'],
-            'description': obj['description'],
-            'description_short': obj['description_short'],
-            'discount': obj['discount_percentage_absolute'],
-            'image_urls': image_urls,
-            'variants': variants,
-        }
-
-        products.append(product)
     except Exception as e:
         print(f'Failed to process product #{product_count}')
         print(f'  product link: "{href}"')
@@ -106,10 +83,6 @@ def scrap_target(href: str, pages: int):
 for target in targets:
     scrap_target(target.href, target.pages)
 
-with open('products.json', 'w') as f:
-    json.dump(products, f, ensure_ascii=False, indent=4)
-print('Saved products')
-
-with open('raw_data.json', 'w') as f:
-    json.dump(raw_data, f, ensure_ascii=False, indent=4)
-print('Saved raw data')
+with open('scrapped.json', 'w') as f:
+    json.dump(scrapped, f, ensure_ascii=False, indent=4)
+print('Saved scrapped products')

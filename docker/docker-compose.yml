@@ -16,7 +16,6 @@ services:
       MARIADB_DATABASE: prestashop
     restart: always
 
-  
   db-admin:
     image: phpmyadmin
     ports:
@@ -53,6 +52,7 @@ services:
       - "443:8443"
     volumes:
       - shop:/var/www/html:delegated
+      - ../data/images:/var/www/html/images:cached
       - ./preinstall:/tmp/pre-install-scripts
     restart: always
     depends_on:

@@ -1,2 +1,6 @@
+prestashop/
+venv/
+scrap/products.json
+scrap/variants.json
 docker/*.env
 /.vs
