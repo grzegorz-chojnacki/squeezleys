@@ -4,7 +4,7 @@ import csv
 import json
 
 
-FILE_PATH = 'http://localhost/images/'
+FILE_PATH = 'file:///images/'
 
 
 def write_all(filepath, rows):

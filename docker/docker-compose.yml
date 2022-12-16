@@ -40,7 +40,7 @@ services:
       PRESTASHOP_SMTP_HOST: smtp.gmail.com
       PRESTASHOP_SMTP_PORT: 587
       PRESTASHOP_SMTP_USER: squeezleys@gmail.com
-      PRESTASHOP_SMTP_PASSWORD: $SMTP_PASSOWRD
+      PRESTASHOP_SMTP_PASSWORD: $SMTP_PASSWORD
       PRESTASHOP_LANGUAGE: pl
       PRESTASHOP_COUNTRY: pl
       PRESTASHOP_FIRST_NAME: Lukasz
@@ -52,7 +52,7 @@ services:
       - "443:8443"
     volumes:
       - shop:/var/www/html:delegated
-      - ../data/images:/var/www/html/images:cached
+      - ../data/images:/images
       - ./preinstall:/tmp/pre-install-scripts
     restart: always
     depends_on:
