@@ -51,9 +51,13 @@ services:
       - "80:8080"
       - "443:8443"
     volumes:
-      - shop:/var/www/html
-      - ../data/images:/images
       - ./preinstall:/tmp/pre-install-scripts
     restart: always
     depends_on:
       - database
+
+  image-server:
+    image: httpd
+    volumes:
+      - ../data/images:/usr/local/apache2/htdocs/
+    restart: always

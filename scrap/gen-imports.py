@@ -5,7 +5,7 @@ import json
 from random import choice
 
 
-FILE_PATH = 'file:///images/'
+FILE_PATH = 'http://image-server/'
 
 
 def write_all(filepath, rows):
@@ -41,7 +41,7 @@ categories_rows.append({
     'meta keywords': '',
     'meta description': '',
     'url rewritten': '',
-    'image url': f'{FILE_PATH}/{choice(category_images["Strona główna"])}',
+    'image url': f'{FILE_PATH}{choice(category_images["Strona główna"])}',
 })
 
 for idx, category in enumerate(categories):
@@ -60,7 +60,7 @@ for idx, category in enumerate(categories):
         'meta keywords': '',
         'meta description': '',
         'url rewritten': '',
-        'image url': f'{FILE_PATH}/{choice(category_images[category])}',
+        'image url': f'{FILE_PATH}{choice(category_images[category])}',
     }
     categories_rows.append(row)
 
