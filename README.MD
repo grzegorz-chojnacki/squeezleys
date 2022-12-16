@@ -35,6 +35,12 @@ $ docker-compose down
 $ docker volume rm docker_db_data docker_shop
 ```
 
+lub
+
+```bash
+docker-compose up --build --force-recreate
+```
+
 ## Dostep
 
 | Endpoint                | Opis                  |
