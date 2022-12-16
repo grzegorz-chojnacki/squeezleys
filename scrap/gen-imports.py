@@ -2,6 +2,7 @@
 
 import csv
 import json
+from random import choice
 
 
 FILE_PATH = 'file:///images/'
@@ -21,11 +22,18 @@ categories_rows = []
 products_rows = []
 combinations_rows = []
 
+category_images = {}
+for p in products:
+    if p['category'] in category_images:
+        category_images[p['category']].append(p['images'][0])
+    else:
+        category_images[p['category']] = [p['images'][0]]
+
 categories = sorted(set(product['category'] for product in products))
 categories_rows.append({
     'category id': 9,
     'active (0/1)': 1,
-    'name *': 'Strona Główna',
+    'name *': 'Strona główna',
     'parent category': 'Home',
     'root category (0/1)': 1,
     'description': '',
@@ -33,7 +41,7 @@ categories_rows.append({
     'meta keywords': '',
     'meta description': '',
     'url rewritten': '',
-    'image url': '',
+    'image url': f'{FILE_PATH}/{choice(category_images["Strona główna"])}',
 })
 
 for idx, category in enumerate(categories):
@@ -52,7 +60,7 @@ for idx, category in enumerate(categories):
         'meta keywords': '',
         'meta description': '',
         'url rewritten': '',
-        'image url': '',
+        'image url': f'{FILE_PATH}/{choice(category_images[category])}',
     }
     categories_rows.append(row)
 
