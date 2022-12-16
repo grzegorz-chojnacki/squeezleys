@@ -36,7 +36,7 @@ services:
       PRESTASHOP_DATABASE_NAME: prestashop
       PRESTASHOP_DATABASE_USER: root
       PRESTASHOP_DATABASE_PASSWORD: prestashop
-      PRESTASHOP_ENABLE_HTTPS: yes
+      PRESTASHOP_ENABLE_HTTPS: 1
       PRESTASHOP_SMTP_HOST: smtp.gmail.com
       PRESTASHOP_SMTP_PORT: 587
       PRESTASHOP_SMTP_USER: squeezleys@gmail.com
@@ -51,7 +51,7 @@ services:
       - "80:8080"
       - "443:8443"
     volumes:
-      - shop:/var/www/html:delegated
+      - shop:/var/www/html
       - ../data/images:/images
       - ./preinstall:/tmp/pre-install-scripts
     restart: always
