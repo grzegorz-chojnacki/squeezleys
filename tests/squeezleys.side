@@ -673,6 +673,18 @@
       ],
       "value": ""
     }, {
+      "id": "7accfb1b-80e8-481c-8d84-bba3bb43a028",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart",
+      "targets": [
+        ["css=.add-to-cart", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='add-to-cart-or-refresh']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "a1f07f77-338c-4c93-ac9f-48c8501cadcf",
       "comment": "",
       "command": "click",
@@ -841,6 +853,18 @@
         ["xpath=//img[contains(@src,'https://localhost/img/p/pl-default-home_default.jpg')]", "xpath:img"],
         ["xpath=//div[@id='js-product-list']/div/div/article/div/div/a/img", "xpath:idRelative"],
         ["xpath=//article/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d95b969-1b1d-4129-9c7f-9328bef4d2e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart",
+      "targets": [
+        ["css=.add-to-cart", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='add-to-cart-or-refresh']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
       ],
       "value": ""
     }, {
@@ -1206,7 +1230,21 @@
       ],
       "value": ""
     }, {
-      "id": "45e550c9-eefc-4e81-b9f4-bbb2172b034a",
+      "id": "c9a94011-0c89-4a0c-bd57-af0eb5426a97",
+      "comment": "",
+      "command": "click",
+      "target": "id=conditions_to_approve[terms-and-conditions]",
+      "targets": [
+        ["id=conditions_to_approve[terms-and-conditions]", "id"],
+        ["name=conditions_to_approve[terms-and-conditions]", "name"],
+        ["css=#conditions_to_approve\\[terms-and-conditions\\]", "css:finder"],
+        ["xpath=//input[@id='conditions_to_approve[terms-and-conditions]']", "xpath:attributes"],
+        ["xpath=//form[@id='conditions-to-approve']/ul/li/div/span/input", "xpath:idRelative"],
+        ["xpath=//li/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e7ee0d7-de06-4610-93b1-b7d1d6fe934d",
       "comment": "",
       "command": "click",
       "target": "css=.ps-shown-by-js > .btn",
@@ -1692,30 +1730,6 @@
         ["xpath=//button[@type='submit']", "xpath:attributes"],
         ["xpath=//form[@id='customer-form']/footer/button", "xpath:idRelative"],
         ["xpath=//footer/button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "7828acde-f4e6-4bf1-b910-bcfa014c485c",
-      "comment": "",
-      "command": "click",
-      "target": "css=#payment-option-1-container > label > span",
-      "targets": [
-        ["css=#payment-option-1-container > label > span", "css:finder"],
-        ["xpath=//div[@id='payment-option-1-container']/label/span", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/label/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Zapłać czekiem')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d5dd1196-1f88-46fd-b1ff-87d577505d87",
-      "comment": "",
-      "command": "click",
-      "target": "css=.ps-shown-by-js > .btn",
-      "targets": [
-        ["css=.ps-shown-by-js > .btn", "css:finder"],
-        ["xpath=(//button[@type='submit'])[10]", "xpath:attributes"],
-        ["xpath=//div[@id='payment-confirmation']/div/button", "xpath:idRelative"],
-        ["xpath=//div[3]/div/button", "xpath:position"]
       ],
       "value": ""
     }]
