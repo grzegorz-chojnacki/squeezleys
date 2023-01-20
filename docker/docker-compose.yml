@@ -76,8 +76,6 @@ services:
     ports:
       - "33030:8080"
       - "33033:8443"
-    volumes:
-      - ./preinstall:/tmp/pre-install-scripts
     restart: always
     depends_on:
       - database
