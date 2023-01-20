@@ -15,11 +15,24 @@ services:
       MARIADB_ROOT_PASSWORD: prestashop
       MARIADB_DATABASE: prestashop
     restart: always
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 30s
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 1024M
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+
 
   db-admin:
     image: phpmyadmin
     ports:
-      - "8081:80"
+      - "33031:80"
     environment:
       PMA_HOST: database
       PMA_USER: root
@@ -28,6 +41,19 @@ services:
     restart: always
     depends_on:
       - database
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 30s
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 1024M
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+
 
   prestashop:
     image: docker.io/bitnami/prestashop:1.7
@@ -48,16 +74,41 @@ services:
       PRESTASHOP_EMAIL: squeezleys@gmail.com
       PRESTASHOP_PASSWORD: $ADMIN_PASSWORD
     ports:
-      - "80:8080"
-      - "443:8443"
+      - "33030:8080"
+      - "33033:8443"
     volumes:
       - ./preinstall:/tmp/pre-install-scripts
     restart: always
     depends_on:
       - database
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 30s
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 1024M
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+
 
   image-server:
     image: httpd
     volumes:
       - ../data/images/:/usr/local/apache2/htdocs/
     restart: always
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 30s
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 1024M
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
