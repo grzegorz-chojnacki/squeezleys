@@ -74,8 +74,8 @@ services:
       PRESTASHOP_EMAIL: squeezleys@gmail.com
       PRESTASHOP_PASSWORD: $ADMIN_PASSWORD
     ports:
-      - "33030:8080"
-      - "33033:8443"
+      - "33030:80"
+      - "33033:443"
     restart: always
     depends_on:
       - database
